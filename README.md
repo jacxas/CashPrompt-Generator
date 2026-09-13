@@ -99,3 +99,7 @@ Configurá las variables `GEMINI_API_KEY` y `NEXT_PUBLIC_PAYPAL_CLIENT_ID` en el
 ## 📄 Licencia
 
 MIT © [jacxas](https://github.com/jacxas)
+
+---
+
+Última actualización: 2026-09-13
