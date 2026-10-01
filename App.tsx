@@ -743,6 +743,7 @@ const App: React.FC = () => {
             <div className="text-4xl font-black tracking-tighter text-slate-900">PROMPTX<span className="text-indigo-600">.</span></div>
             <p className="text-center md:text-left leading-loose max-w-md">© 2024 • EL FUTURO ES DE QUIENES SABEN PREGUNTAR • TODOS LOS DERECHOS RESERVADOS • RESULTADOS NO GARANTIZADOS</p>
             <div className="flex space-x-12">
+              <a href="/prompts" className="hover:text-indigo-600 transition-colors uppercase">Mis Prompts</a>
               <a href="#" className="hover:text-indigo-600 transition-colors uppercase">Términos</a>
               <a href="#" className="hover:text-indigo-600 transition-colors uppercase">Privacidad</a>
             </div>

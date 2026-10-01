@@ -1,7 +1,13 @@
 # Base44 Dev Environment
 
 ## Project Overview
-PROMPTX — a Vite + React 19 + TypeScript single-page landing page for a digital product (2000+ AI prompts). Pure frontend, no backend or database.
+PROMPTX — a Vite + React 19 + TypeScript landing page for a digital product (2000+ AI prompts), plus a separate prompts-library page at `/prompts`.
+
+## Prompt Library (added feature)
+- Database: SQLite (node:22 built-in `node:sqlite`) stored in the `api-data` compose volume at `/data/prompts.db`
+- API: zero-dependency Node server in `server/index.mjs` — `GET/POST /api/prompts`, `DELETE /api/prompts/:id`, `GET /api/health`
+- Wiring: single origin — Vite proxies `/api` → `http://api:8000` (compose service name), so no CORS needed
+- Frontend: `src/pages/PromptsPage.tsx` (save/search/tag-filter/copy/delete); routing is pathname-based in `index.tsx` (no router lib); linked from the landing footer
 
 ## Running the App
 ```bash
